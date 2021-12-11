@@ -139,7 +139,7 @@ export default function Updater(): null {
     const outdatedCallKeys: string[] = JSON.parse(serializedOutdatedCallKeys)
     if (outdatedCallKeys.length === 0) return
     const calls = outdatedCallKeys.map((key) => parseCallKey(key))
-    // .filter(item => item.address.toLowerCase() !== '0x5Fe5cC0122403f06abE2A75DBba1860Edb762985'.toLowerCase())
+    // .filter(item => item.address.toLowerCase() !== '0x2AAb8d4BD8dcf2c80CE3348f38F6C33BE3a355b3'.toLowerCase())
 
     const chunkedCalls = chunkArray(calls, CALL_CHUNK_SIZE)
 
